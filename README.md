@@ -48,9 +48,9 @@ To demonstrate cloud economics awareness, the entire 3-tier application stack wa
 
 | Infrastructure State | Operational Profile | Estimated Monthly Run Cost |
 | :--- | :--- | :--- |
-| **Peak / Production Mode** | Full Multi-AZ RDS Active, ALB Multi-Zone Routing, ASG fully scaled out with multiple computing nodes. | `$234.72 USD`
-| **Lean / Scaled-Down Mode**| Off-peak/Dev cycle. ASG restricted to a minimum capacity of 1 baseline compute instance. | `$XX.XX` 
+| **Peak / Production Mode** | Full Multi-AZ RDS Active, ALB Multi-Zone Routing, ASG fully scaled out with multiple computing nodes. | `$19.56 USD`
+| **Lean / Scaled-Down Mode**| Off-peak/Dev cycle. ASG restricted to a minimum capacity of 1 baseline compute instance. | `$234.72 USD` 
 
-> **FinOps Insight:** Scaling down the application's compute tier during off-peak periods or weekend development cycles yields a cost optimization savings of **XX%** *[Calculate percentage change]* over standard continuous peak run times.
+> **FinOps Insight:** Scaling down the application's compute tier during off-peak periods or weekend development cycles yields a cost optimization savings of **60%** *[Calculate percentage change]* over standard continuous peak run times.
 
 ---
