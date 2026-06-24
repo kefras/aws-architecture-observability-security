@@ -44,13 +44,19 @@ Configured an automated remediation and notification loop to catch architectural
 
 ## 💰 FinOps Financial Projections (AWS Pricing Calculator)
 
-To demonstrate cloud economics awareness, the entire 3-tier application stack was modeled under two distinct business cycles running 24/7.
+To demonstrate cloud economics awareness, the entire 3-tier application stack was modeled under two distinct business cycles running 24/7 using the AWS Pricing Calculator.
 
 | Infrastructure State | Operational Profile | Estimated Monthly Run Cost |
 | :--- | :--- | :--- |
-| **Peak / Production Mode** | Full Multi-AZ RDS Active, ALB Multi-Zone Routing, ASG fully scaled out with multiple computing nodes. | `$19.56 USD`
-| **Lean / Scaled-Down Mode**| Off-peak/Dev cycle. ASG restricted to a minimum capacity of 1 baseline compute instance. | `$234.72 USD` 
+| **Peak / Production Mode** | Full Multi-AZ RDS Active, ALB Multi-Zone Routing, ASG fully scaled out with multiple computing nodes. | `$46.36 USD` |
+| **Lean / Scaled-Down Mode**| Off-peak/Dev cycle. ASG restricted to a minimum capacity of 1 baseline compute instance. | `$19.56 USD` |
 
-> **FinOps Insight:** Scaling down the application's compute tier during off-peak periods or weekend development cycles yields a cost optimization savings of **60%** *[Calculate percentage change]* over standard continuous peak run times.
+### 🔍 Lean State Cost Breakdown (Calculated 24/7 Monthly Run)
+* **Elastic Load Balancing (ALB):** $16.66 USD
+* **Amazon EC2 Compute Tier:** $1.68 USD
+* **Amazon RDS Datastore Tier:** $1.22 USD
+* **Amazon Simple Notification Service (SNS):** $0.00 USD (Free Tier Eligible)
+
+> **FinOps Insight:** Scaling down the application's compute tier during off-peak periods or weekend development cycles yields a cost optimization savings of **57.8%** over standard continuous peak run times.
 
 ---
